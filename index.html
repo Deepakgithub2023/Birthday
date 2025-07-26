@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="watermark-img1"></div>
+  <div class="watermark-img2"></div>
+  <canvas id="confetti-canvas" class="hidden"></canvas>
+
+  <!-- Popup 1 -->
+  <div class="popup" id="popup1">
+    <div class="popup-content">
+      <h2>🎉 Ready for a Surprise?</h2>
+      <button onclick="nextPopup(1)">Yes!</button>
+    </div>
+  </div>
+
+  <!-- Popup 2 -->
+  <div class="popup" id="popup2">
+    <div class="popup-content">
+      <h2>🎁 Click to Unlock the Surprise!</h2>
+      <button onclick="nextPopup(2)">Show Me 🎈</button>
+    </div>
+  </div>
+
+  <!-- Popup 3 -->
+  <div class="popup" id="popup3" style="display:none;">
+    <div class="popup-content">
+      <h2>💌 A Little Secret...</h2>
+      <p>Before you see your surprise, just know: you never have to worry, because you are loved and cherished more than you know. Today is all about you—relax, smile, and let happiness fill your heart! 💖</p>
+      <button onclick="nextPopup(3)">I'm Ready!</button>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div id="mainContent" class="hidden">
+    <h1>Happy Birthday, Beautiful Soul! 🎂</h1>
+    <p class="birthday-wish">
+      On this special day, may your heart be filled with laughter, your mind with dreams, and your life with endless possibilities. You are a shining light, a source of joy and inspiration to everyone around you. May your journey ahead be as bright and colorful as a rainbow, and may every wish you make today come true. 
+      <br><br>
+      Happy Birthday to a truly wonderful girl! May your year be sprinkled with magic, love, and unforgettable moments. Keep smiling, keep shining, and always remember how deeply you are loved. Here’s to you, to your dreams, and to the beautiful adventures that await. 🎉💖
+    </p>
+    <audio id="birthday-audio" src="music/happy-birthday.mp3" preload="auto"></audio>
+    <div class="carousel" id="carousel">
+      <div class="carousel-inner" id="carousel-inner" onclick="nextCarouselImage3D()">
+        <img src="images/img5.jpg" alt="special moment">
+        <img src="images/img6.jpg" alt="special moment">
+        <img src="images/img7.jpg" alt="special moment">
+        <img src="images/img8.jpg" alt="special moment">
+        <img src="images/img9.jpg" alt="special moment">
+        <img src="images/img10.jpg" alt="special moment">
+        <img src="images/img11.jpg" alt="special moment">
+        <!-- Add more images here -->
+      </div>
+    </div>
+  </div>
+
+  <footer class="birthday-footer">
+    <p>🎈 Sending you smiles for every moment of your special day… Have a wonderful time and a very happy birthday! 🎂💐✨</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
